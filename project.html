@@ -1,0 +1,2524 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style> -->
+  </head>
+
+  <body>
+    <div class="main px-10">
+      <!-- Header starts from here -->
+      <div
+        class="flex justify-center items-center gap-x-[100px] sticky z-20 top-0 bg-white"
+      >
+        <div class="bufferLogo">
+          <svg
+            class="BufferLogo_logo__ZlBPi Nav_logo__zClE7"
+            width="132"
+            height="36"
+            viewBox="0 0 132 36"
+            aria-hidden="true"
+          >
+            <path
+              d="M1 9.34 15.17 2l14.322 7.34-14.322 7.366L1 9.34ZM86.068 12.909v-.175c0-2.421 1.425-3.195 3.823-3.02V5.294c-5.746-.35-8.47 2.521-8.47 7.439v.175h-2.598v4.418h3.598v13.38h4.647v-13.38h5.346v13.38h4.647v-13.38h3.823v-4.418h-3.823v-.175c0-2.421 1.4-3.195 3.823-3.02V5.294c-5.746-.35-8.47 2.521-8.47 7.439v.175h-5.346Z"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              d="M53.588 17.751c1.474-1.173 2.374-2.845 2.374-4.992 0-4.169-3.398-7.014-7.67-7.014h-9.92v24.912h10.72c4.371 0 7.87-2.946 7.87-7.214-.05-2.571-1.35-4.543-3.374-5.692Zm-5.271-7.388c1.599 0 2.698 1.173 2.698 2.745 0 1.573-1.15 2.746-2.698 2.746h-4.972v-5.491h4.972Zm.75 15.726h-5.722v-5.866h5.721c1.7 0 2.923 1.248 2.923 2.92 0 1.698-1.224 2.946-2.923 2.946Z"
+            ></path>
+            <path
+              d="M71.451 12.883v9.61c0 3.096-1.698 4.419-3.972 4.419-2.099 0-3.573-1.248-3.573-3.67V12.883H59.26v10.933c0 4.743 2.973 7.364 6.82 7.364 2.424 0 4.298-.898 5.348-2.496v1.997h4.647V12.883H71.45Z"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              d="M119.147 23.667h-13.592c.675 2.346 2.623 3.345 5.047 3.345 1.824 0 3.273-.749 4.047-1.773l3.748 2.122c-1.674 2.422-4.372 3.82-7.845 3.82-6.046 0-9.869-4.094-9.869-9.411 0-5.317 3.848-9.41 9.519-9.41 5.322 0 9.119 4.168 9.119 9.41 0 .699-.075 1.298-.174 1.897Zm-8.945-7.14c-2.498 0-4.197 1.324-4.722 3.595h9.194c-.574-2.57-2.523-3.594-4.472-3.594Z"
+            ></path>
+            <path
+              d="M126.044 15.954v-3.07h-4.648v17.798h4.648V22.17c0-3.745 3.048-4.818 5.471-4.519v-5.117c-2.273 0-4.547.999-5.471 3.42ZM15.17 29.301 5.503 24.06 1 26.493l14.17 7.676 14.322-7.676-4.553-2.434-9.77 5.242Z"
+            ></path>
+            <path
+              d="m5.503 15.787 9.667 4.754 9.769-4.754 4.553 2.218-14.322 6.973L1 18.005l4.503-2.218Z"
+            ></path>
+          </svg>
+        </div>
+
+        <div class="nab-bar">
+          <ul class="flex gap-6 py-2 text-xl">
+            <div class="relative group/outer inline-block">
+              <li
+                class="text-black flex justify-center items-center gap-2 px-4 py-2 rounded-3xl transition duration-500 ease-in-out hover:bg-gray-200"
+              >
+                Features
+                <img
+                  src="./images/down-arrow.png"
+                  alt=""
+                  class="w-[20px] h-[20px]"
+                />
+              </li>
+
+              <div
+                class="hidden group-hover/outer:grid grid-cols-2 gap-2 absolute bg-white border rounded-3xl shadow-xl w-[50vw] p-4"
+              >
+                <!-- create option in feature starts -->
+                <div
+                  class="flex flex-col transition duration-500 ease-in-out group/inner hover:bg-gray-200 p-2 rounded-xl w-full h-full"
+                >
+                  <div class="flex gap-2 justify-start items-center">
+                    <div class="flex self-start py-1">
+                      <svg
+                        class="Nav_menuItemIcon__fw__X"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M9.643 13.519H5.767a.775.775 0 0 0-.775.775v3.876c0 .428.347.775.775.775h3.876a.775.775 0 0 0 .775-.775v-3.876a.775.775 0 0 0-.775-.775ZM9.643 4.992H5.767a.775.775 0 0 0-.775.775v3.876c0 .428.347.775.775.775h3.876a.775.775 0 0 0 .775-.775V5.767a.775.775 0 0 0-.775-.775ZM18.17 13.519h-3.876a.775.775 0 0 0-.775.775v3.876c0 .428.347.775.775.775h3.876a.775.775 0 0 0 .775-.775v-3.876a.775.775 0 0 0-.775-.775ZM15.656 4.804l-2.349 2.35c-.26.259-.26.68 0 .939l2.35 2.349c.259.26.68.26.939 0l2.349-2.35c.26-.259.26-.68 0-.939l-2.35-2.349a.664.664 0 0 0-.939 0Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="flex justify-between">
+                        <h1 class="font-semibold">Create</h1>
+
+                        <div
+                          class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                        >
+                          <svg
+                            class="Nav_menuItemIcon__fw__X"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="text-lg">
+                        <p>Build your own library of content ideas</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- create option in feature ends-->
+
+                <!-- publish option in feature starts -->
+                <div
+                  class="flex flex-col transition duration-500 group/inner hover:bg-gray-200 p-2 rounded-xl w-full h-full"
+                >
+                  <div class="flex gap-2 justify-start items-center">
+                    <div class="flex self-start py-1">
+                      <svg
+                        class="Nav_menuItemIcon__fw__X"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M15.069 13.519v1.55l.775.775m-8.139-1.938L4.217 15.07l1.836-5.426-1.836-5.426 8.526 3.488m-6.2 1.938h3.875m9.302 5.426a4.65 4.65 0 1 1-9.302 0 4.65 4.65 0 0 1 9.302 0Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="flex justify-between">
+                        <h1 class="font-semibold">Publish</h1>
+
+                        <div
+                          class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                        >
+                          <svg
+                            class="Nav_menuItemIcon__fw__X"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="text-lg">
+                        <p>
+                          Plan and schedule your content across social media
+                          platforms
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Publish option in feature ends -->
+
+                <!-- Analyze option in feature starts -->
+                <div
+                  class="flex flex-col transition duration-500 group/inner hover:bg-gray-200 p-2 rounded-xl w-full h-full"
+                >
+                  <div class="flex gap-2 justify-start items-center">
+                    <div class="flex self-start py-1">
+                      <svg
+                        class="Nav_menuItemIcon__fw__X"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M19.72 8.093 13.13 14.68l-3.876-3.875-5.038 5.038M19.72 8.093h-4.651m4.65 0v4.65"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="flex justify-between">
+                        <h1 class="font-semibold">Analyze</h1>
+
+                        <div
+                          class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                        >
+                          <svg
+                            class="Nav_menuItemIcon__fw__X"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="text-lg">
+                        <p>Measure performance and turn insights into growth</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Analyze option in feature ends  -->
+
+                <!-- Engage option in feature starts -->
+                <div
+                  class="flex flex-col transition duration-500 group/inner hover:bg-gray-200 p-2 rounded-xl w-full h-full"
+                >
+                  <div class="flex gap-2 justify-start items-center">
+                    <div class="flex self-start py-1">
+                      <svg
+                        class="Nav_menuItemIcon__fw__X"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14.914 9.798a1.938 1.938 0 0 0-2.713 0l-.233.31-.271-.232a1.876 1.876 0 1 0-2.48 2.79l2.79 2.713 2.79-2.713c.93-.93.853-2.093.156-2.868M8.79 18.17a6.976 6.976 0 1 0-3.023-3.023l-1.55 4.573 4.573-1.55Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="flex justify-between">
+                        <h1 class="font-semibold">Engage</h1>
+
+                        <div
+                          class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                        >
+                          <svg
+                            class="Nav_menuItemIcon__fw__X"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="text-lg">
+                        <p>Easily engage with your community</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Engage option in feature ends  -->
+
+                <!-- Collaborate option in feature starts  -->
+                <div
+                  class="flex flex-col transition duration-500 group/inner hover:bg-gray-200 p-2 rounded-xl w-full h-full"
+                >
+                  <div class="flex gap-2 justify-start items-center">
+                    <div class="flex self-start py-1">
+                      <svg
+                        class="Nav_menuItemIcon__fw__X"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="m11.04 15.742 1.55 1.55a1.644 1.644 0 0 0 2.325-2.325m-1.55-1.55 1.938 1.937a1.644 1.644 0 1 0 2.325-2.325L14.62 10.02a2.326 2.326 0 0 0-3.286 0l-.682.682a1.644 1.644 0 0 1-2.326-2.325l2.178-2.179a4.488 4.488 0 0 1 5.473-.674l.364.217c.33.2.723.268 1.101.194l1.349-.272m0-.775.775 8.527h-1.55M4.838 4.89l-.776 8.527 5.04 5.039a1.644 1.644 0 1 0 2.325-2.325M4.837 5.664h6.202"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="flex justify-between">
+                        <h1 class="font-semibold">Collaborate</h1>
+
+                        <div
+                          class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                        >
+                          <svg
+                            class="Nav_menuItemIcon__fw__X"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="text-lg">
+                        <p>
+                          Work together seamlessly, from planning to publishing
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Collaborate option in feature ends -->
+
+                <!-- Start page option in feature starts -->
+                <div
+                  class="flex flex-col transition duration-500 group/inner hover:bg-gray-200 p-2 rounded-xl w-full h-full"
+                >
+                  <div class="flex gap-2 justify-start items-center">
+                    <div class="flex self-start py-1">
+                      <svg
+                        class="Nav_menuItemIcon__fw__X"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M10.418 12.744a3.877 3.877 0 0 0 5.845.418l2.325-2.325a3.876 3.876 0 0 0-5.48-5.48l-1.333 1.325m1.744 4.511a3.876 3.876 0 0 0-5.845-.418L5.35 13.1a3.876 3.876 0 0 0 5.48 5.48l1.325-1.325"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="flex justify-between">
+                        <h1 class="font-semibold">Start Page</h1>
+
+                        <div
+                          class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                        >
+                          <svg
+                            class="Nav_menuItemIcon__fw__X"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="text-lg">
+                        <p>Build a custom link-in-bio page in minutes</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Start page option in feature end -->
+              </div>
+            </div>
+            <!-- feature hover end -->
+
+            <!-- channel hover start -->
+            <div class="relative group/outer">
+              <li
+                class="flex justify-center items-center gap-2 px-4 py-2 rounded-3xl transition duration-500 ease-in-out hover:bg-gray-200"
+              >
+                Channel
+                <img
+                  src="./images/down-arrow.png"
+                  alt=""
+                  class="w-[20px] h-[20px]"
+                />
+              </li>
+              <div
+                class="hidden group-hover/outer:grid grid-cols-2 gap-2 absolute bg-white border rounded-3xl shadow-xl w-[40vw] p-4"
+              >
+                <!-- BlueSky option in channel starts -->
+                <div
+                  class="flex flex-col transition duration-200 ease-in-out group/inner hover:bg-gray-200 p-2 rounded-xl w-[full] h-full"
+                >
+                  <div class="flex gap-2 justify-start items-center">
+                    <div class="flex self-start py-1">
+                      <img
+                        src="./images/blueSkylogo.png"
+                        alt="blueSkylogo"
+                        class="w-[20px] h-[20px]"
+                      />
+                    </div>
+
+                    <div class="flex justify-between w-full">
+                      <div>
+                        <p class="text-base">Bluesky</p>
+                      </div>
+                      <div
+                        class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                      >
+                        <svg
+                          class="Nav_menuItemIcon__fw__X"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- BlueSky option in channel ends -->
+
+                <!-- Facebook option in channel starts -->
+                <div
+                  class="flex flex-col transition duration-200 ease-in-out group/inner hover:bg-gray-200 p-2 rounded-xl w-[full] h-full"
+                >
+                  <div class="flex gap-2 justify-start items-center">
+                    <div class="flex self-start py-1">
+                      <img
+                        src="./images/facebook.png"
+                        alt="blueSkylogo"
+                        class="w-[20px] h-[20px]"
+                      />
+                    </div>
+
+                    <div class="flex justify-between w-full">
+                      <div>
+                        <p class="text-base">Facebook</p>
+                      </div>
+                      <div
+                        class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                      >
+                        <svg
+                          class="Nav_menuItemIcon__fw__X"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Facebook option in channel ends -->
+
+                <!-- Google business profile option in channel starts -->
+                <div
+                  class="flex flex-col transition duration-200 ease-in-out group/inner hover:bg-gray-200 p-2 rounded-xl w-[full] h-full"
+                >
+                  <div class="flex gap-2 justify-start items-center">
+                    <div class="flex self-start py-1">
+                      <img
+                        src="./images/googleBusinessProfileLogo.png"
+                        alt="blueSkylogo"
+                        class="w-[20px] h-[20px]"
+                      />
+                    </div>
+
+                    <div class="flex justify-between w-full">
+                      <div>
+                        <p class="text-base">Google Business Profile</p>
+                      </div>
+                      <div
+                        class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                      >
+                        <svg
+                          class="Nav_menuItemIcon__fw__X"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Google business profile option in channel ends -->
+
+                <!-- Instagram option in channel starts -->
+                <div
+                  class="flex flex-col transition duration-200 ease-in-out group/inner hover:bg-gray-200 p-2 rounded-xl w-[full] h-full"
+                >
+                  <div class="flex gap-2 justify-start items-center">
+                    <div class="flex self-start py-1">
+                      <img
+                        src="./images/instagram.png"
+                        alt="blueSkylogo"
+                        class="w-[20px] h-[20px]"
+                      />
+                    </div>
+
+                    <div class="flex justify-between w-full">
+                      <div>
+                        <p class="text-base">Instagram</p>
+                      </div>
+                      <div
+                        class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                      >
+                        <svg
+                          class="Nav_menuItemIcon__fw__X"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Instagram option in channel ends -->
+
+                <!-- LinkedIn option in channel starts -->
+                <div
+                  class="flex flex-col transition duration-200 ease-in-out group/inner hover:bg-gray-200 p-2 rounded-xl w-[full] h-full"
+                >
+                  <div class="flex gap-2 justify-start items-center">
+                    <div class="flex self-start py-1">
+                      <img
+                        src="./images/linkedin-logo.png"
+                        alt="blueSkylogo"
+                        class="w-[20px] h-[20px]"
+                      />
+                    </div>
+
+                    <div class="flex justify-between w-full">
+                      <div>
+                        <p class="text-base">LinkedIn</p>
+                      </div>
+                      <div
+                        class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                      >
+                        <svg
+                          class="Nav_menuItemIcon__fw__X"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- LinkedIn option in channel ends -->
+
+                <!-- Mastodon option in channel starts -->
+                <div
+                  class="flex flex-col transition duration-200 ease-in-out group/inner hover:bg-gray-200 p-2 rounded-xl w-[full] h-full"
+                >
+                  <div class="flex gap-2 justify-start items-center">
+                    <div class="flex self-start py-1">
+                      <img
+                        src="./images/mastodon.png"
+                        alt="blueSkylogo"
+                        class="w-[20px] h-[20px]"
+                      />
+                    </div>
+
+                    <div class="flex justify-between w-full">
+                      <div>
+                        <p class="text-base">Mastodon</p>
+                      </div>
+                      <div
+                        class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                      >
+                        <svg
+                          class="Nav_menuItemIcon__fw__X"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Mastodon option in channel ends -->
+
+                <!-- Pintrest option in channel starts -->
+                <div
+                  class="flex flex-col transition duration-200 ease-in-out group/inner hover:bg-gray-200 p-2 rounded-xl w-[full] h-full"
+                >
+                  <div class="flex gap-2 justify-start items-center">
+                    <div class="flex self-start py-1">
+                      <img
+                        src="./images/pinterest-logo.png"
+                        alt="blueSkylogo"
+                        class="w-[20px] h-[20px]"
+                      />
+                    </div>
+
+                    <div class="flex justify-between w-full">
+                      <div>
+                        <p class="text-base">Pintrest</p>
+                      </div>
+                      <div
+                        class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                      >
+                        <svg
+                          class="Nav_menuItemIcon__fw__X"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pintrest option in channel ends -->
+
+                <!-- Threads option in channel starts -->
+                <div
+                  class="flex flex-col transition duration-200 ease-in-out group/inner hover:bg-gray-200 p-2 rounded-xl w-[full] h-full"
+                >
+                  <div class="flex gap-2 justify-start items-center">
+                    <div class="flex self-start py-1">
+                      <img
+                        src="./images/threads.png"
+                        alt="blueSkylogo"
+                        class="w-[20px] h-[20px]"
+                      />
+                    </div>
+
+                    <div class="flex justify-between w-full">
+                      <div>
+                        <p class="text-base">Threads</p>
+                      </div>
+                      <div
+                        class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                      >
+                        <svg
+                          class="Nav_menuItemIcon__fw__X"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Threads option in channel ends -->
+
+                <!-- Tiktok option in channel starts -->
+                <div
+                  class="flex flex-col transition duration-200 ease-in-out group/inner hover:bg-gray-200 p-2 rounded-xl w-[full] h-full"
+                >
+                  <div class="flex gap-2 justify-start items-center">
+                    <div class="flex self-start py-1">
+                      <img
+                        src="./images/tik-tok.png"
+                        alt="blueSkylogo"
+                        class="w-[20px] h-[20px]"
+                      />
+                    </div>
+
+                    <div class="flex justify-between w-full">
+                      <div>
+                        <p class="text-base">Tiktok</p>
+                      </div>
+                      <div
+                        class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                      >
+                        <svg
+                          class="Nav_menuItemIcon__fw__X"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Tiktok option in channel ends -->
+
+                <!-- Twitter option in channel starts -->
+                <div
+                  class="flex flex-col transition duration-200 ease-in-out group/inner hover:bg-gray-200 p-2 rounded-xl w-[full] h-full"
+                >
+                  <div class="flex gap-2 justify-start items-center">
+                    <div class="flex self-start py-1">
+                      <img
+                        src="./images/twitter.png"
+                        alt="blueSkylogo"
+                        class="w-[20px] h-[20px]"
+                      />
+                    </div>
+
+                    <div class="flex justify-between w-full">
+                      <div>
+                        <p class="text-base">X (Twitter)</p>
+                      </div>
+                      <div
+                        class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                      >
+                        <svg
+                          class="Nav_menuItemIcon__fw__X"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Twitter option in channel ends -->
+
+                <!-- Youtube option in channel starts -->
+                <div
+                  class="flex flex-col transition duration-200 ease-in-out group/inner hover:bg-gray-200 p-2 rounded-xl w-[full] h-full"
+                >
+                  <div class="flex gap-2 justify-start items-center">
+                    <div class="flex self-start py-1">
+                      <img
+                        src="./images/youtube.png"
+                        alt="blueSkylogo"
+                        class="w-[20px] h-[20px]"
+                      />
+                    </div>
+
+                    <div class="flex justify-between w-full">
+                      <div>
+                        <p class="text-base">Youtube</p>
+                      </div>
+                      <div
+                        class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                      >
+                        <svg
+                          class="Nav_menuItemIcon__fw__X"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Youtube option in channel ends -->
+              </div>
+            </div>
+            <!-- Channel hover Ends here -->
+
+            <!-- Resources hover starts -->
+            <div class="relative group/outer">
+              <li
+                class="flex justify-center items-center gap-2 px-4 py-2 rounded-3xl transition duration-500 ease-in-out hover:bg-gray-200"
+              >
+                Resources
+                <img
+                  src="./images/down-arrow.png"
+                  alt=""
+                  class="w-[20px] h-[20px]"
+                />
+              </li>
+              <div
+                class="hidden group-hover/outer:grid grid-cols-2 absolute bg-white rounded-3xl border shadow-xl w-[45vw] px-4 py-6"
+              >
+                <!-- Blog option in Resources start -->
+                <div
+                  class="flex flex-col w-full p-2 transition duration-400 ease-in-out hover:bg-gray-200 rounded-2xl group/inner"
+                >
+                  <div class="flex justify-between">
+                    <h1 class="font-semibold">Blog</h1>
+                    <div
+                      class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                    >
+                      <svg
+                        class="Nav_menuItemIcon__fw__X"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="text-base">
+                    Real-life stories and resources on growing an engaged
+                    audience
+                  </p>
+                </div>
+                <!-- Blog option in Resources end -->
+
+                <!-- Templates option in Resources start -->
+                <div
+                  class="flex flex-col w-full p-2 transition duration-400 ease-in-out hover:bg-gray-200 rounded-2xl group/inner"
+                >
+                  <div class="flex justify-between">
+                    <h1 class="font-semibold">Templates</h1>
+                    <div
+                      class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                    >
+                      <svg
+                        class="Nav_menuItemIcon__fw__X"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="text-base">
+                    Plug-and-play content templates to jump-start your planning
+                  </p>
+                </div>
+                <!-- Templates option in Resources ends -->
+
+                <!-- free tools option in Resources start -->
+                <div
+                  class="flex flex-col w-full p-2 transition duration-400 ease-in-out hover:bg-gray-200 rounded-2xl group/inner"
+                >
+                  <div class="flex justify-between">
+                    <h1 class="font-semibold">Free Tools</h1>
+                    <div
+                      class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                    >
+                      <svg
+                        class="Nav_menuItemIcon__fw__X"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="text-base">
+                    Easy-to-use tools to grow your presence across social media
+                  </p>
+                </div>
+                <!-- free tools option in Resources ends -->
+
+                <!-- Social Media Insights option in Resources start -->
+                <div
+                  class="flex flex-col w-full p-2 transition duration-400 ease-in-out hover:bg-gray-200 rounded-2xl group/inner"
+                >
+                  <div class="flex justify-between">
+                    <h1 class="font-semibold">Social Media Insights</h1>
+                    <div
+                      class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                    >
+                      <svg
+                        class="Nav_menuItemIcon__fw__X"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="text-base">
+                    Data-driven benchmarks, trends, and tips to grow smarter on
+                    social
+                  </p>
+                </div>
+                <!-- Social media Insights option in Resources ends -->
+
+                <!-- community option in Resources start -->
+                <div
+                  class="flex flex-col w-full p-2 transition duration-400 ease-in-out hover:bg-gray-200 rounded-2xl group/inner"
+                >
+                  <div class="flex justify-between">
+                    <h1 class="font-semibold">Community</h1>
+                    <div
+                      class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                    >
+                      <svg
+                        class="Nav_menuItemIcon__fw__X"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="text-base">
+                    Learn, connect and grow with creators around the world
+                  </p>
+                </div>
+                <!-- community option in Resources ends -->
+
+                <!-- Support option in Resources start -->
+                <div
+                  class="flex flex-col w-full p-2 transition duration-400 ease-in-out hover:bg-gray-200 rounded-2xl group/inner"
+                >
+                  <div class="flex justify-between">
+                    <h1 class="font-semibold">Support</h1>
+                    <div
+                      class="opacity-0 scale-90 transition duration-700 ease-in-out group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                    >
+                      <svg
+                        class="Nav_menuItemIcon__fw__X"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="text-base">
+                    Help articles and tutorials to get the most out of buffer
+                  </p>
+                </div>
+                <!-- Support option in Resources ends -->
+              </div>
+            </div>
+            <!-- Resources hover ends here -->
+
+            <!-- Pricing Starts here -->
+            <li
+              class="px-4 py-2 rounded-3xl transition duration-500 ease-in-out hover:bg-gray-200"
+            >
+              Pricing
+            </li>
+            <!--  Pricing ends here  -->
+          </ul>
+        </div>
+        <!-- Log in and get started buttons start -->
+        <div class="flex gap-2">
+          <button
+            class="rounded-3xl px-4 py-2 transform transition duration-300 hover:-translate-y-[3px]"
+          >
+            Log in
+          </button>
+          <button
+            class="rounded-3xl px-4 py-2 bg-[hsla(105,68%,77%,1)] border border-[hsla(105,68%,77%,1)] hover:bg-[hsla(105,68%,68%,1)] transform transition duration-300 hover:-translate-y-[3px]"
+          >
+            Get started now
+          </button>
+        </div>
+        <!-- Log in and get started buttons ends -->
+      </div>
+
+      <!-- header Ends here -->
+
+      <!-- Hero section Start -->
+      <!--backDiv-->
+      <div class="relative h-screen w-full">
+        <div
+          class="absolute inset-0 h-screen w-full bg-[repeating-linear-gradient(to_right,rgba(0,0,0,0.1)_0px,rgba(0,0,0,0.1)_2px,transparent_2px,transparent_50px),repeating-linear-gradient(to_bottom,rgba(0,0,0,0.1)_0px,rgba(0,0,0,0.1)_2px,transparent_2px,transparent_50px)] bg-[size:50px_100%,100%_50px] opacity-20 flex flex-wrap gap-6 justify-center items-center p-10"
+        >
+          <img
+            src="./images/blueSkylogo.png"
+            alt=""
+            class="absolute top-[10%] left-[20%] w-12 h-12 object-contain"
+          />
+          <img
+            src="./images/facebook.png"
+            alt=""
+            class="absolute top-[20%] right-[20%] w-12 h-12 object-contain"
+          />
+          <img
+            src="./images/googleBusinessProfileLogo.png"
+            alt=""
+            class="absolute top-[35%] left-[80%] w-12 h-12 object-contain"
+          />
+          <img
+            src="./images/instagram.png"
+            alt=""
+            class="absolute top-[55%] left-[85%] w-12 h-12 object-contain"
+          />
+          <img
+            src="./images/linkedin-logo.png"
+            alt=""
+            class="absolute bottom-[5%] left-[80%] w-12 h-12 object-contain"
+          />
+          <img
+            src="./images/mastodon.png"
+            alt=""
+            class="absolute bottom-[10%] left-[20%] w-12 h-12 object-contain"
+          />
+          <img
+            src="./images/pinterest-logo.png"
+            alt=""
+            class="absolute top-[70%] left-[15%] w-12 h-12 object-contain"
+          />
+          <img
+            src="./images/threads.png"
+            alt=""
+            class="absolute top-[50%] left-[5%] w-12 h-12 object-contain"
+          />
+          <img
+            src="./images/tik-tok.png"
+            alt=""
+            class="absolute top-[30%] left-[10%] w-12 h-12 object-contain"
+          />
+          <img
+            src="./images/twitter.png"
+            alt=""
+            class="absolute top-[15%] left-[10%] w-12 h-12 object-contain"
+          />
+          <img
+            src="./images/youtube.png"
+            alt=""
+            class="absolute bottom-[15%] right-[10%] w-12 h-12 object-contain"
+          />
+        </div>
+
+        <!-- Front Div-->
+        <div
+          class="h-[100vh] w-full absolute inset-0 flex gap-6 flex-col justify-center items-center"
+        >
+          <div class="flex flex-col h-auto w-auto">
+            <h1 class="text-6xl font-semibold">
+              Your social media <span class="block text-center">workspace</span>
+            </h1>
+          </div>
+          <div><p>Share consistently without chaos</p></div>
+          <div
+            class="flex gap-1 rounded-full jutify-center items-center p-[4px] shadow-md"
+          >
+            <input
+              type="text"
+              placeholder="Enter your email..."
+              class="w-[400px] h-[60px] bg-white p-4 rounded-full"
+            />
+            <div class="group/inner flex">
+              <button
+                class="px-[20px] py-[17px] bg-[hsla(105,68%,77%,1)] rounded-full transition duration-400 ease-in-out hover:bg-[hsla(105,68%,68%,1)] flex gap-2"
+              >
+                Get started now
+                <div
+                  class="opacity-0 scale-90 transition duration-400 ease-in-out group-hover/inner:opacity-100 group-hover:scale-100"
+                >
+                  <svg
+                    class="Nav_menuItemIcon__fw__X"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div>
+            <p class="text-xs">
+              By entering your email, you agree to receive emails from Buffer
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Hero section ends here -->
+
+      <!-- active users section start -->
+
+      <div class="grid grid-cols-3 gap-6 p-8 h-[200px]">
+        <div
+          class="h-auto flex flex-col gap-8 justify-center items-center rounded-xl h-full"
+        >
+          <h1 class="text-5xl">189,497</h1>
+          <p>ACTIVE USERS</p>
+        </div>
+        <div
+          class="h-auto flex flex-col gap-8 justify-center items-center rounded-xl h-full"
+        >
+          <h1 class="text-5xl">7,547,982</h1>
+          <p>POSTS PUBLISHED LAST MONTH</p>
+        </div>
+        <div
+          class="h-auto flex flex-col gap-8 justify-center items-center rounded-xl h-full"
+        >
+          <h1 class="text-5xl">11</h1>
+          <p>SOCIAL PLATFORMS SUPPORTED</p>
+        </div>
+      </div>
+      <!-- active users section ends -->
+
+      <!-- publish section start -->
+      <div class="py-4">
+        <div
+          class="grid grid-cols-[3fr_2fr] bg-[rgb(198,190,238)] h-auto rounded-3xl p-4 group/outer"
+        >
+          <div
+            class="flex justify-center items-center transition duration-300 ease-in-out group-hover/outer:scale-103"
+          >
+            <img
+              src="./images/publish_img.webp"
+              alt="pubish_image"
+              class="w-[600px]"
+            />
+          </div>
+          <div class="flex flex-col gap-8 p-2">
+            <p class="text-purple-900">PUBLISH</p>
+            <p class="text-4xl">
+              The most complete set of publishing integration, ever
+            </p>
+            <p>
+              Schedule your content to the most popular platforms including
+              Facebook, Instagram, TikTok, LinkedIn, Threads, Bluesky, YouTube
+              Shorts, Pinterest, Google Business, Mastodon and X.
+            </p>
+            <div class="flex gap-2">
+              <div class="group w-auto">
+                <button
+                  class="flex items-center bg-black gap-2 text-white px-6 py-3 rounded-full transition duration-500 ease-in-out group-hover:-translate-y-[5px]"
+                >
+                  Learn more
+                  <div
+                    class="opacity-0 scale-90 transition duration-300 ease-in-out group-hover:flex items-center justify-center group-hover:opacity-100 group-hover:scale-100"
+                  >
+                    <img
+                      src="./images/white-right-arrow.png"
+                      alt="arrow"
+                      class="w-6 h-6"
+                    />
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 h-full items-start justify-center">
+              <div class="flex gap-1">
+                <div>
+                  <svg
+                    class="Nav_menuItemIcon__fw__X"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                    />
+                  </svg>
+                </div>
+                <p class="text-xs">
+                  Auto-publish your content or get a notification when it’s time
+                  to post
+                </p>
+              </div>
+
+              <div class="flex gap-1">
+                <div>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="m13.519 8.093 2.325 2.325m-9.302-3.1v3.1m10.852 3.1v3.101M10.418 4.217v1.55m-2.325 3.1H4.992m13.953 6.202h-3.1M11.192 4.992h-1.55m9.798.496-.992-.992a.938.938 0 0 0-1.334 0l-12.62 12.62a.937.937 0 0 0 0 1.333l.993.992a.93.93 0 0 0 1.333 0l12.62-12.62a.932.932 0 0 0 0-1.333Z"
+                    />
+                  </svg>
+                </div>
+                <p class="text-xs">
+                  Magically customize and repurpose your post for each platform
+                </p>
+              </div>
+
+              <div class="flex gap-1">
+                <div>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M8.868 4.217v3.1m6.201-3.1v3.1M4.992 10.419h13.953m-10.077 3.1h.008m3.093 0h.007m3.093 0h.008m-6.21 3.101h.009m3.093 0h.007m3.093 0h.008M6.542 5.767h10.853c.856 0 1.55.694 1.55 1.55V18.17a1.55 1.55 0 0 1-1.55 1.55H6.542a1.55 1.55 0 0 1-1.55-1.55V7.318c0-.857.694-1.55 1.55-1.55Z"
+                    />
+                  </svg>
+                </div>
+                <p class="text-xs">
+                  See everything you have scheduled in a calendar or queue view
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- publish section ends -->
+
+      <!--create section start  -->
+      <div class="py-4">
+        <div
+          class="grid grid-cols-[3fr_2fr] bg-[rgb(250,181,179)] h-auto rounded-3xl p-4 group/outer"
+        >
+          <div class="flex flex-col gap-8 p-4">
+            <p class="text-pink-900">CREATE</p>
+            <p class="text-5xl leading-[1]">
+              Turn any idea into the perfect post
+            </p>
+            <p class="leading-[2]">
+              Whether you’re flying solo or working with a team, Buffer has all
+              the features to help you create, organize, and repurpose your
+              content for any channel. There’s also an AI Assistant if you need
+              it.
+            </p>
+            <div class="flex gap-2">
+              <div class="group w-auto">
+                <button
+                  class="flex items-center bg-black gap-2 text-white px-6 py-3 rounded-full transition duration-500 ease-in-out group-hover:-translate-y-[5px]"
+                >
+                  Learn more
+                  <div
+                    class="opacity-0 scale-90 transition duration-300 ease-in-out group-hover:flex items-center justify-center group-hover:opacity-100 group-hover:scale-100"
+                  >
+                    <img
+                      src="./images/white-right-arrow.png"
+                      alt="arrow"
+                      class="w-6 h-6"
+                    />
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2 h-full items-start justify-center">
+              <div class="flex gap-1">
+                <div>
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M18.945 11.968v5.426a1.55 1.55 0 0 1-1.55 1.55H6.542a1.55 1.55 0 0 1-1.55-1.55V6.542a1.55 1.55 0 0 1 1.55-1.55h5.427m3.1 1.55h4.651m-2.325-2.325v4.65m1.55 5.427-2.392-2.392a1.55 1.55 0 0 0-2.192 0l-7.043 7.043m3.875-9.302a1.55 1.55 0 1 1-3.1 0 1.55 1.55 0 0 1 3.1 0Z"
+                    />
+                  </svg>
+                </div>
+                <p class="text-xs">
+                  Import content from Canva, Dropbox, Google and more
+                </p>
+              </div>
+
+              <div class="flex gap-1">
+                <div>
+                  <svg
+                    class="Nav_menuItemIcon__fw__X"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M9.643 13.519H5.767a.775.775 0 0 0-.775.775v3.876c0 .428.347.775.775.775h3.876a.775.775 0 0 0 .775-.775v-3.876a.775.775 0 0 0-.775-.775ZM9.643 4.992H5.767a.775.775 0 0 0-.775.775v3.876c0 .428.347.775.775.775h3.876a.775.775 0 0 0 .775-.775V5.767a.775.775 0 0 0-.775-.775ZM18.17 13.519h-3.876a.775.775 0 0 0-.775.775v3.876c0 .428.347.775.775.775h3.876a.775.775 0 0 0 .775-.775v-3.876a.775.775 0 0 0-.775-.775ZM15.656 4.804l-2.349 2.35c-.26.259-.26.68 0 .939l2.35 2.349c.259.26.68.26.939 0l2.349-2.35c.26-.259.26-.68 0-.939l-2.35-2.349a.664.664 0 0 0-.939 0Z"
+                    />
+                  </svg>
+                </div>
+                <p class="text-xs">
+                  Visually organize your ideas into groups or themes
+                </p>
+              </div>
+
+              <div class="flex gap-1">
+                <div>
+                  <svg
+                    class="Nav_menuItemIcon__fw__X"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M10.418 12.744a3.877 3.877 0 0 0 5.845.418l2.325-2.325a3.876 3.876 0 0 0-5.48-5.48l-1.333 1.325m1.744 4.511a3.876 3.876 0 0 0-5.845-.418L5.35 13.1a3.876 3.876 0 0 0 5.48 5.48l1.325-1.325"
+                    />
+                  </svg>
+                </div>
+                <p class="text-xs">
+                  Add a beautiful link in bio page to your profiles
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex justify-center items-center transition duration-300 ease-in-out group-hover/outer:scale-103"
+          >
+            <img
+              src="./images/create-large.webp"
+              alt="pubish_image"
+              class="w-[600px]"
+            />
+          </div>
+        </div>
+      </div>
+      <!--create section end  -->
+
+      <!-- collaborate and engage section start -->
+
+      <div class="py-4">
+        <div class="grid grid-cols-2 h-auto gap-6">
+          <!-- collaborate section starts -->
+          <div
+            class="grid grid-rows[2fr_1fr] p-4 bg-[rgb(250,220,130)] rounded-3xl group/scales"
+          >
+            <div class="flex flex-col gap-6 p-6">
+              <p class="text-yellow-700">COLLABORATE</p>
+              <p class="text-5xl">Great content, created together</p>
+              <p>
+                Collaborate seamlessly with your team. Invite unlimited
+                collaborators, assign roles and permissions, and keep everyone
+                aligned with saved drafts and notes.
+              </p>
+              <div>
+                <div class="inline-block group/outer">
+                  <button
+                    class="group/inner flex items-center bg-black gap-2 text-white px-6 py-3 rounded-full transition duration-500 ease-in-out group-hover/outer:-translate-y-[5px]"
+                  >
+                    Learn more
+                    <div
+                      class="opacity-0 scale-90 transition duration-300 ease-in-out flex items-center justify-center group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                    >
+                      <img
+                        src="./images/white-right-arrow.png"
+                        alt="arrow"
+                        class="w-6 h-6"
+                      />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="transition duration-300 ease-in-out group-hover/scales:scale-103"
+            >
+              <img src="./images/collaborate-large.webp" alt="" />
+            </div>
+          </div>
+
+          <!-- collaborate section ends here -->
+
+          <!-- engage section starts here -->
+
+          <div
+            class="grid grid-rows[2fr_1fr] p-4 bg-[hsla(105,68%,77%,1)] rounded-3xl group/scales"
+          >
+            <div class="flex flex-col gap-6 p-6">
+              <p class="text-green-700">ENGAGE</p>
+              <p class="text-5xl">Reply to comments in a flash</p>
+              <p>
+                Engage with your audience on Facebook and Instagram at 10x
+                speed. Buffer will help you triage and respond to comments from
+                one simple dashboard.
+              </p>
+              <div>
+                <div class="inline-block group/outer">
+                  <button
+                    class="group/inner flex items-center bg-black gap-2 text-white px-6 py-3 rounded-full transition duration-500 ease-in-out group-hover/outer:-translate-y-[5px]"
+                  >
+                    Learn more
+                    <div
+                      class="opacity-0 scale-90 transition duration-300 ease-in-out flex items-center justify-center group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                    >
+                      <img
+                        src="./images/white-right-arrow.png"
+                        alt="arrow"
+                        class="w-6 h-6"
+                      />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="transition duration-300 ease-in-out group-hover/scales:scale-103"
+            >
+              <img src="./images/engage-large.webp" alt="" />
+            </div>
+          </div>
+          <!-- engage section ends here -->
+        </div>
+      </div>
+      <!-- collaborate and engage section end -->
+
+      <!-- analyze section start here -->
+      <div class="py-4">
+        <div
+          class="grid grid-cols-[3fr_2fr] bg-blue-200 h-auto rounded-3xl p-4 group/outer"
+        >
+          <div class="flex flex-col gap-6 p-4">
+            <p class="text-blue-900">Analyze</p>
+            <p class="text-5xl leading-[1]">Answers, not just analytics</p>
+            <p class="leading-[2]">
+              Whether it’s basic analytics or in-depth reporting, Buffer will
+              help you learn what works and how to improve.
+            </p>
+            <div class="flex gap-2">
+              <div class="group w-auto">
+                <button
+                  class="flex items-center bg-black gap-2 text-white px-6 py-3 rounded-full transition duration-500 ease-in-out group-hover:-translate-y-[5px]"
+                >
+                  Learn more
+                  <div
+                    class="opacity-0 scale-90 transition duration-300 ease-in-out group-hover:flex items-center justify-center group-hover:opacity-100 group-hover:scale-100"
+                  >
+                    <img
+                      src="./images/white-right-arrow.png"
+                      alt="arrow"
+                      class="w-6 h-6"
+                    />
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2 h-full items-start justify-center">
+              <div class="flex gap-1">
+                <div>
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M18.945 11.968v5.426a1.55 1.55 0 0 1-1.55 1.55H6.542a1.55 1.55 0 0 1-1.55-1.55V6.542a1.55 1.55 0 0 1 1.55-1.55h5.427m3.1 1.55h4.651m-2.325-2.325v4.65m1.55 5.427-2.392-2.392a1.55 1.55 0 0 0-2.192 0l-7.043 7.043m3.875-9.302a1.55 1.55 0 1 1-3.1 0 1.55 1.55 0 0 1 3.1 0Z"
+                    />
+                  </svg>
+                </div>
+                <p class="text-xs">
+                  See the best times, formats, and frequencies to post
+                </p>
+              </div>
+
+              <div class="flex gap-1">
+                <div>
+                  <svg
+                    class="Nav_menuItemIcon__fw__X"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M9.643 13.519H5.767a.775.775 0 0 0-.775.775v3.876c0 .428.347.775.775.775h3.876a.775.775 0 0 0 .775-.775v-3.876a.775.775 0 0 0-.775-.775ZM9.643 4.992H5.767a.775.775 0 0 0-.775.775v3.876c0 .428.347.775.775.775h3.876a.775.775 0 0 0 .775-.775V5.767a.775.775 0 0 0-.775-.775ZM18.17 13.519h-3.876a.775.775 0 0 0-.775.775v3.876c0 .428.347.775.775.775h3.876a.775.775 0 0 0 .775-.775v-3.876a.775.775 0 0 0-.775-.775ZM15.656 4.804l-2.349 2.35c-.26.259-.26.68 0 .939l2.35 2.349c.259.26.68.26.939 0l2.349-2.35c.26-.259.26-.68 0-.939l-2.35-2.349a.664.664 0 0 0-.939 0Z"
+                    />
+                  </svg>
+                </div>
+                <p class="text-xs">Get demographic data about your audience</p>
+              </div>
+
+              <div class="flex gap-1">
+                <div>
+                  <svg
+                    class="Nav_menuItemIcon__fw__X"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M10.418 12.744a3.877 3.877 0 0 0 5.845.418l2.325-2.325a3.876 3.876 0 0 0-5.48-5.48l-1.333 1.325m1.744 4.511a3.876 3.876 0 0 0-5.845-.418L5.35 13.1a3.876 3.876 0 0 0 5.48 5.48l1.325-1.325"
+                    />
+                  </svg>
+                </div>
+                <p class="text-xs">
+                  Tag and recycle your best-performing content
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex justify-center items-center transition duration-300 ease-in-out group-hover/outer:scale-103"
+          >
+            <img
+              src="./images/analyze-large.webp"
+              alt="pubish_image"
+              class="w-[600px]"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- analyze section ends here -->
+
+      <!-- account connecting section starts -->
+      <div class="py-4">
+        <div
+          class="flex flex-col justify-center items-center gap-6 p-16 border border-black rounded-3xl"
+        >
+          <p class="text-2xl font-semibold">Connect your favorite accounts</p>
+          <div class="flex justify-center items-center gap-6">
+            <div class="group/inner relative inline-block w-auto">
+              <img
+                src="./images/blueSkylogo.png"
+                alt="logo"
+                class="w-[68px] h-[60px] bg-white rounded-sm"
+              />
+
+              <div
+                class="opacity-0 absolute top-0 left-0 transition duration-500 ease-in-out group-hover/inner:opacity-100 w-auto"
+              >
+                <img
+                  src="./images/White-butterfly.png"
+                  alt="butterfly"
+                  class="w-[68px] h-[60px] bg-black"
+                />
+                <div
+                  class="w-[12vw] opacity-0 transition duration-500 ease-in-out group-hover/inner:opacity-100"
+                >
+                  <p>Buffer x Bluesky -></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group/inner relative inline-block w-auto">
+              <img
+                src="./images/facebook.png"
+                alt="logo"
+                class="w-[68px] h-[60px] bg-white rounded-sm bg-black"
+              />
+
+              <div
+                class="opacity-0 absolute top-0 left-0 transition duration-500 ease-in-out group-hover/inner:opacity-100 w-auto"
+              >
+                <img
+                  src="./images/colored_facebook.png"
+                  alt="butterfly"
+                  class="w-[68px] h-[60px] bg-white"
+                />
+                <div
+                  class="w-[12vw] opacity-0 transition duration-500 ease-in-out group-hover/inner:opacity-100"
+                >
+                  <p>Buffer x facebook -></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group/inner relative inline-block w-auto">
+              <img
+                src="./images/googleBusinessProfileLogo.png"
+                alt="logo"
+                class="w-[68px] h-[60px] bg-white rounded-sm"
+              />
+
+              <div
+                class="opacity-0 absolute top-0 left-0 transition duration-500 ease-in-out group-hover/inner:opacity-100 w-auto"
+              >
+                <img
+                  src="./images/colored_google_business.png"
+                  alt="butterfly"
+                  class="w-[68px] h-[60px] bg-white"
+                />
+                <div
+                  class="w-[12vw] opacity-0 transition duration-500 ease-in-out group-hover/inner:opacity-100"
+                >
+                  <p>Buffer x Google Business Profile -></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group/inner relative inline-block w-auto">
+              <img
+                src="./images/instagram.png"
+                alt="logo"
+                class="w-[68px] h-[60px] bg-white rounded-sm"
+              />
+
+              <div
+                class="opacity-0 absolute top-0 left-0 transition duration-500 ease-in-out group-hover/inner:opacity-100 w-auto"
+              >
+                <img
+                  src="./images/coloured_instagram.png"
+                  alt="butterfly"
+                  class="w-[68px] h-[60px] bg-white"
+                />
+                <div
+                  class="w-[12vw] opacity-0 transition duration-500 ease-in-out group-hover/inner:opacity-100"
+                >
+                  <p>Buffer x Instagram -></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group/inner relative inline-block w-auto">
+              <img
+                src="./images/linkedin-logo.png"
+                alt="logo"
+                class="w-[68px] h-[60px] bg-white rounded-sm"
+              />
+
+              <div
+                class="opacity-0 absolute top-0 left-0 transition duration-500 ease-in-out group-hover/inner:opacity-100 w-auto"
+              >
+                <img
+                  src="./images/colored_linkedin.png"
+                  alt="butterfly"
+                  class="w-[68px] h-[60px] bg-white"
+                />
+                <div
+                  class="w-[12vw] opacity-0 transition duration-500 ease-in-out group-hover/inner:opacity-100"
+                >
+                  <p>Buffer x linkedIn-></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group/inner relative inline-block w-auto">
+              <img
+                src="./images/mastodon-black-icon.png"
+                alt="logo"
+                class="w-[68px] h-[60px] bg-white rounded-sm"
+              />
+
+              <div
+                class="opacity-0 absolute top-0 left-0 transition duration-500 ease-in-out group-hover/inner:opacity-100 w-auto"
+              >
+                <img
+                  src="./images/colored_mastodon-icon.png"
+                  alt="butterfly"
+                  class="w-[68px] h-[60px] bg-white"
+                />
+                <div
+                  class="w-[12vw] opacity-0 transition duration-500 ease-in-out group-hover/inner:opacity-100"
+                >
+                  <p>Buffer x mastodon -></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group/inner relative inline-block w-auto">
+              <img
+                src="./images/pinterest-logo.png"
+                alt="logo"
+                class="w-[68px] h-[60px] bg-white rounded-sm"
+              />
+
+              <div
+                class="opacity-0 absolute top-0 left-0 transition duration-500 ease-in-out group-hover/inner:opacity-100 w-auto"
+              >
+                <img
+                  src="./images/colored_pintrest.png"
+                  alt="butterfly"
+                  class="w-[68px] h-[60px] bg-white"
+                />
+                <div
+                  class="w-[12vw] opacity-0 transition duration-500 ease-in-out group-hover/inner:opacity-100"
+                >
+                  <p>Buffer x Pintrest -></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group/inner relative inline-block w-auto">
+              <img
+                src="./images/threads.png"
+                alt="logo"
+                class="w-[68px] h-[60px] bg-white rounded-sm"
+              />
+
+              <div
+                class="opacity-0 absolute top-0 left-0 transition duration-500 ease-in-out group-hover/inner:opacity-100 w-auto"
+              >
+                <img
+                  src="./images/colored_threads.png"
+                  alt="butterfly"
+                  class="w-[68px] h-[60px] bg-white"
+                />
+                <div
+                  class="w-[12vw] opacity-0 transition duration-500 ease-in-out group-hover/inner:opacity-100"
+                >
+                  <p>Buffer x Threads -></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group/inner relative inline-block w-auto">
+              <img
+                src="./images/tik-tok.png"
+                alt="logo"
+                class="w-[68px] h-[60px] bg-white rounded-sm"
+              />
+
+              <div
+                class="opacity-0 absolute top-0 left-0 transition duration-500 ease-in-out group-hover/inner:opacity-100 w-auto"
+              >
+                <img
+                  src="./images/colored_tiktok.png"
+                  alt="butterfly"
+                  class="w-[68px] h-[60px] bg-white"
+                />
+                <div
+                  class="w-[12vw] opacity-0 transition duration-500 ease-in-out group-hover/inner:opacity-100"
+                >
+                  <p>Buffer x Tiktok -></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group/inner relative inline-block w-auto">
+              <img
+                src="./images/twitter.png"
+                alt="logo"
+                class="w-[68px] h-[60px] bg-white rounded-sm"
+              />
+
+              <div
+                class="opacity-0 absolute top-0 left-0 transition duration-500 ease-in-out group-hover/inner:opacity-100 w-auto"
+              >
+                <img
+                  src="./images/colored_twitter.png"
+                  alt="butterfly"
+                  class="w-[68px] h-[60px] bg-white"
+                />
+                <div
+                  class="w-[12vw] opacity-0 transition duration-500 ease-in-out group-hover/inner:opacity-100"
+                >
+                  <p>Buffer x Twitter -></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group/inner relative inline-block w-auto">
+              <img
+                src="./images/youtube.png"
+                alt="logo"
+                class="w-[68px] h-[60px] bg-white rounded-sm"
+              />
+
+              <div
+                class="opacity-0 absolute top-0 left-0 transition duration-500 ease-in-out group-hover/inner:opacity-100 w-auto"
+              >
+                <img
+                  src="./images/colored_youtube.png"
+                  alt="butterfly"
+                  class="w-[68px] h-[60px] bg-white"
+                />
+                <div
+                  class="w-[12vw] opacity-0 transition duration-500 ease-in-out group-hover/inner:opacity-100"
+                >
+                  <p>Buffer x Youtube -></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- account connecting section ends -->
+
+      <!-- Creator , small businesses and agencies section start -->
+      <div class="py-4">
+        <div class="flex flex-col bg-purple-300 rounded-2xl h-full p-6">
+          <div class="flex justify-center items-start gap-8 p-6">
+            <button
+              class="px-6 py-2 text-black rounded-3xl border border-black transition duration-500 ease-in-out hover:bg-black hover:text-white"
+            >
+              Creators
+            </button>
+            <button
+              class="px-6 py-2 text-black rounded-3xl border border-black transition duration-500 ease-in-out hover:bg-black hover:text-white"
+            >
+              Small businesses
+            </button>
+            <button
+              class="px-6 py-2 text-black rounded-3xl border border-black transition duration-500 ease-in-out hover:bg-black hover:text-white"
+            >
+              Agencies
+            </button>
+          </div>
+          <div class="flex flex-col gap-6 p-6 justify-start items-start">
+            <p class="text-4xl">Grow from zero to → one to → one million</p>
+            <p>
+              Whether you’re just getting started on your creator journey or
+              scaling your audience to new heights,<span class="block">
+                Buffer will get your content in front of more people.</span
+              >
+            </p>
+            <div class="flex flex-col">
+              <div class="flex items-center gap-2">
+                <img
+                  src="./images/check-mark-line-icon.png"
+                  alt=""
+                  class="w-[10px] h-[10px]"
+                />
+                <p>Save all your ideas as inspiration strikes</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="./images/check-mark-line-icon.png"
+                  alt=""
+                  class="w-[10px] h-[10px]"
+                />
+                <p>Learn exactly what content work best and why</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <img
+                  src="./images/check-mark-line-icon.png"
+                  alt=""
+                  class="w-[10px] h-[10px]"
+                />
+                <p>Create once, crosspost everywhere</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-2 w-full">
+            <div
+              class="flex flex-col justify-center items-center gap-2 w-auto bg-white/30 backdrop-blur-md rounded-xl p-6"
+            >
+              <img
+                src="./images/profile_img.jpg"
+                alt=""
+                class="w-[80px] h-[80px] rounded-full border 2 border-black"
+              />
+              <p class="font-bold">@user</p>
+              <p class="">34.9k followers on X</p>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center gap-2 bg-white/30 backdrop-blur-md rounded-xl p-6"
+            >
+              <img
+                src="./images/profile_img.jpg"
+                alt=""
+                class="w-[80px] h-[80px] rounded-full border 2 border-black"
+              />
+              <p class="font-bold">@user</p>
+              <p class="">34.9k followers on X</p>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center gap-2 bg-white/30 backdrop-blur-md rounded-xl p-6"
+            >
+              <img
+                src="./images/profile_img.jpg"
+                alt=""
+                class="w-[80px] h-[80px] rounded-full border 2 border-black"
+              />
+              <p class="font-bold">@user</p>
+              <p class="">34.9k followers on X</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Creator , small businesses and agencies section end -->
+
+      <!-- About us section start -->
+      <div class="relative py-4">
+        <div
+          class="py-4 bg-[hsl(175_38%_17%)] flex flex-col justify-center items-center gap-12 p-6 rounded-2xl h-screen"
+        >
+          <p class="text-8xl text-white">About Us</p>
+          <p class="w-[800px] text-white text-center">
+            We’re an optimistic and gratitude-filled group of remote workers
+            scattered around the world and dedicated to creating a product our
+            customers will use and love.
+          </p>
+          <div class="inline-block group/outer">
+            <button
+              class="group/inner flex text-xl items-center gap-2 px-10 py-4 bg-[hsla(105,68%,77%,1)] rounded-full transition duration-500 ease-in-out group-hover/outer:-translate-y-[5px] bg-gray-100"
+            >
+              Learn more
+              <div
+                class="opacity-0 scale-90 transition duration-300 ease-in-out flex items-center justify-center group-hover/inner:opacity-100 group-hover/inner:scale-100"
+              >
+                <img
+                  src="./images/arrow-right.png"
+                  alt="arrow"
+                  class="w-8 h-8"
+                />
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- White section (background for bottom half of pictures) -->
+        <div class="bg-white h-48">
+          <!-- Image slider overlaps both backgrounds -->
+          <div
+            class="absolute inset-x-0 top-120 flex justify-center items-center gap-4 overflow-hidden px-8"
+          >
+            <!-- First image (half visible, pushed left) -->
+            <div class="flex-shrink-0 -ml-20 translate-y-4">
+              <img
+                src="./images/about-01.webp"
+                class="w-40 h-60 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+
+            <div class="flex-shrink-0 -translate-y-4">
+              <img
+                src="./images/about-02.webp"
+                class="w-60 h-60 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+
+            <div class="flex-shrink-0">
+              <img
+                src="./images/about-03.webp"
+                class="w-80 h-60 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+
+            <div class="flex-shrink-0 translate-y-6">
+              <img
+                src="./images/about-04.webp"
+                class="w-60 h-60 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+
+            <div class="flex-shrink-0 -translate-y-2">
+              <img
+                src="./images/about-05.webp"
+                class="w-40 h-60 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+
+            <div class="flex-shrink-0 -mr-20 translate-y-3">
+              <img
+                src="./images/about-06.webp"
+                class="w-40 h-60 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About us section end -->
+
+      <!-- open company section start -->
+      <div class="py-4">
+        <div class="flex flex-col gap-8 p-4">
+          <div class="flex justify-between items-center">
+            <div class="flex flex-col gap-8">
+              <p class="text-7xl">We are an open company</p>
+              <p class="w-[700px]">
+                Since 2013, we’ve shared Buffer’s finances, team salaries, and
+                other key metrics openly. Our commitment to transparency is
+                rooted in our belief that it fosters trust, keeps us
+                accountable, and helps drive positive change within our
+                industry.
+              </p>
+            </div>
+            <div>
+              <div class="inline-block group/outer">
+                <button
+                  class="group/inner flex text-2xl items-center gap-2 px-12 py-4 hover:bg-gray-200 border border-black rounded-full transition duration-500 ease-in-out group-hover/outer:-translate-y-[5px]"
+                >
+                  Open Dashboard
+                  <div
+                    class="opacity-0 scale-90 transition duration-300 ease-in-out flex items-center justify-center group-hover/inner:opacity-100 group-hover/inner:scale-100"
+                  >
+                    <img
+                      src="./images/arrow-right.png"
+                      alt="arrow"
+                      class="w-8 h-8"
+                    />
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-4 gap-2">
+            <div
+              class="border border-gray-300 p-4 rounded-3xl flex flex-col justify-center items-center"
+            >
+              <p class="font-semibold">MAU</p>
+              <p>Monthly Active Users</p>
+              <p class="text-4xl font-semibold">189,491</p>
+            </div>
+            <div
+              class="border border-gray-300 p-4 rounded-3xl flex flex-col justify-center items-center"
+            >
+              <p class="font-semibold">MAU</p>
+              <p>Monthly Active Users</p>
+              <p class="text-4xl font-semibold">189,491</p>
+            </div>
+            <div
+              class="border border-gray-300 p-4 rounded-3xl flex flex-col justify-center items-center"
+            >
+              <p class="font-semibold">MAU</p>
+              <p>Monthly Active Users</p>
+              <p class="text-4xl font-semibold">189,491</p>
+            </div>
+            <div
+              class="border border-gray-300 p-4 rounded-3xl flex flex-col justify-center items-center"
+            >
+              <p class="font-semibold">MAU</p>
+              <p>Monthly Active Users</p>
+              <p class="text-4xl font-semibold">189,491</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- open company section end -->
+
+      <!-- resources section start -->
+      <div class="py-4">
+        <div class="bg-gray-200 p-10 rounded-2xl h-auto">
+          <div class="mb-10">
+            <p class="text-sm uppercase tracking-wide text-gray-500">
+              Resources
+            </p>
+            <h2 class="text-4xl font-bold mt-2">
+              Fuel your social media success
+            </h2>
+            <p class="text-gray-600 mt-2 max-w-2xl">
+              Everything you need to level up your social strategy—in one place.
+            </p>
+          </div>
+
+          <!-- Grid Container -->
+          <div class="grid grid-cols-[300px_1fr] gap-6 h-auto">
+            <!-- first col -->
+            <div class="grid grid-rows-[4fr_3fr] gap-4">
+              <div
+                class="flex flex-col bg-green-200 rounded-xl shadow col-span-1 group/inner"
+              >
+                <div class="flex flex-col p-6 gap-2">
+                  <div class="flex gap-10">
+                    <h3 class="text-lg font-semibold">Free Marketing Tools</h3>
+                    <img
+                      src="./images/arrow-right.png"
+                      alt=""
+                      class="w-[30px] h-[30px] opacity-0 transition duration-400 ease-in-out group-hover/inner:opacity-100"
+                    />
+                  </div>
+                  <p class="text-base text-gray-700">
+                    A collection of free tools to make your social media
+                    marketing easier and more effective.
+                  </p>
+                </div>
+
+                <img
+                  src="./images/free-marketing.webp"
+                  alt=""
+                  class="mt-auto"
+                />
+              </div>
+
+              <div
+                class="bg-pink-200 rounded-xl shadow col-span-1 h-auto group/inner"
+              >
+                <div class="flex flex-col px-4">
+                  <div class="flex flex-col gap-2 p-4">
+                    <div class="flex gap-10">
+                      <h3 class="text-lg font-semibold">
+                        Social Media Marketing
+                      </h3>
+                      <img
+                        src="./images/arrow-right.png"
+                        alt=""
+                        class="w-[30px] h-[30px] opacity-0 transition duration-400 ease-in-out group-hover/inner:opacity-100"
+                      />
+                    </div>
+                    <p class="text-xs text-gray-700">
+                      Your go-to guide for mastering the basics of social media
+                      and beyond.
+                    </p>
+                  </div>
+                  <div>
+                    <img
+                      src="./images/social-media-marketing-101-small.webp"
+                      alt=""
+                      class="h-auto"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- secons col -->
+
+            <div class="grid grid-rows-[250px_1fr] gap-4">
+              <!-- second col first row -->
+              <div
+                class="bg-purple-200 rounded-3xl flex p-4 group/inner overflow-hidden"
+              >
+                <div class="flex flex-col gap-4">
+                  <div class="flex gap-10">
+                    <h3 class="text-lg font-semibold">
+                      Social Media Glosssary
+                    </h3>
+                    <img
+                      src="./images/arrow-right.png"
+                      alt=""
+                      class="w-[30px] h-[30px] opacity-0 transition duration-400 ease-in-out group-hover/inner:opacity-100"
+                    />
+                  </div>
+                  <p class="text-base w-[400px]">
+                    A glossary of the most popular terms to help you make sense
+                    of all the social media lingo.
+                  </p>
+                </div>
+                <div>
+                  <img src="./images/social-media-glossary-small.webp" alt="" />
+                </div>
+              </div>
+              <!-- second col second row -->
+              <div class="grid grid-cols-[200px_1fr] gap-4">
+                <!-- second row first col -->
+                <div
+                  class="bg-blue-200 group/inner rounded-3xl p-4 col-span-1 flex flex-col gap-2 p-4"
+                >
+                  <div class="flex gap-10">
+                    <h3 class="text-lg font-semibold">Best time to post</h3>
+                    <img
+                      src="./images/arrow-right.png"
+                      alt=""
+                      class="w-[30px] h-[30px] opacity-0 transition duration-400 ease-in-out group-hover/inner:opacity-100"
+                    />
+                  </div>
+                  <p>
+                    Discover the best times to post on social media to maximize
+                    your engagement.
+                  </p>
+                  <img
+                    src="./images/best-time-to-post-small.webp"
+                    alt=""
+                    class="w-full h-80 object-cover"
+                  />
+                </div>
+                <!-- second row second col -->
+                <div
+                  class="bg-red-200 rounded-3xl p-8 group/inner flex flex-col gap-4"
+                >
+                  <div class="flex gap-10">
+                    <h3 class="text-lg font-semibold">
+                      Social media resources
+                    </h3>
+                    <img
+                      src="./images/arrow-right.png"
+                      alt=""
+                      class="w-[30px] h-[30px] opacity-0 transition duration-400 ease-in-out group-hover/inner:opacity-100"
+                    />
+                  </div>
+                  <p>
+                    A collection of articles and interviews packed with tips,
+                    stories, and insights to level up your social media
+                    marketing game.
+                  </p>
+                  <img
+                    src="./images/social-media-resources-small.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- resources section end -->
+
+      <!-- get started section starts -->
+      <div class="py-4">
+        <div
+          class="bg-[rgb(97,97,82)] rounded-3xl flex flex-col gap-10 p-6 justify-center items-center h-screen"
+        >
+          <h1 class="text-5xl font-bold text-white">
+            Grow your social presence with
+            <span class="block text-center">confidence</span>
+          </h1>
+          <div class="group/inner flex">
+            <button
+              class="px-[20px] py-[17px] bg-[hsla(105,68%,77%,1)] rounded-full transition duration-400 ease-in-out hover:bg-[hsla(105,68%,68%,1)] flex gap-2"
+            >
+              Get started now
+              <div
+                class="opacity-0 scale-90 transition duration-400 ease-in-out group-hover/inner:opacity-100 group-hover:scale-100"
+              >
+                <svg
+                  class="Nav_menuItemIcon__fw__X"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M11.47 4.47a.75.75 0 0 1 1.06 0l7 7a.75.75 0 0 1 0 1.06l-7 7a.75.75 0 1 1-1.06-1.06l5.72-5.72H5a.75.75 0 0 1 0-1.5h12.19l-5.72-5.72a.75.75 0 0 1 0-1.06Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+          <p class="text-lg text-white">No credit card needed. Free forever.</p>
+        </div>
+      </div>
+    </div>
+    <!-- get started section ends -->
+    <!-- footer start -->
+
+    <div class="h-auto bg-[rgb(85,107,47)] p-4 rounded-xl flex justify-between">
+      <ul class="space-y-2">
+        <li class="text-green-300 font-bold uppercase tracking-wide">
+          Resources
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Blog</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Template</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Library</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Social Media Insights
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Resource</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Library</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Social Media Terms
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Glossary</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Free Marketing Tools
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">AI</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Compare Buffer
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Community
+        </li>
+      </ul>
+
+      <ul class="space-y-2">
+        <li class="text-green-300 font-bold uppercase tracking-wide">
+          Resources
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Blog</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Template</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Library</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Social Media Insights
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Resource</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Library</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Social Media Terms
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Glossary</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Free Marketing Tools
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">AI</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Social Media Post Generator
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Compare Buffer
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Community
+        </li>
+      </ul>
+
+      <ul class="space-y-2">
+        <li class="text-green-300 font-bold uppercase tracking-wide">
+          Resources
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Blog</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Template</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Library</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Social Media Insights
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Resource</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Library</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Social Media Terms
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Glossary</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Free Marketing Tools
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">AI</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Social Media Post Generator
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Compare Buffer
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Community
+        </li>
+      </ul>
+
+      <ul class="space-y-2">
+        <li class="text-green-300 font-bold uppercase tracking-wide">
+          Resources
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Blog</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Template</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Library</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Social Media Insights
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Resource</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Library</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Social Media Terms
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Glossary</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Free Marketing Tools
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">AI</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Social Media Post Generator
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Compare Buffer
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Community
+        </li>
+      </ul>
+
+      <ul class="space-y-2">
+        <li class="text-green-300 font-bold uppercase tracking-wide">
+          Resources
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Blog</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Template</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Library</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Social Media Insights
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Resource</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Library</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Social Media Terms
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Glossary</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Free Marketing Tools
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">AI</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Social Media Post Generator
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Compare Buffer
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Community
+        </li>
+      </ul>
+
+      <ul class="space-y-2">
+        <li class="text-green-300 font-bold uppercase tracking-wide">
+          Resources
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Blog</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Template</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Library</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Social Media Insights
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Resource</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Library</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Social Media Terms
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">Glossary</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Free Marketing Tools
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">AI</li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Social Media Post Generator
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Compare Buffer
+        </li>
+        <li class="text-white hover:text-green-400 cursor-pointer">
+          Community
+        </li>
+      </ul>
+    </div>
+
+    <!-- footer end -->
+    <button
+      class="fixed bottom-6 left-6 bg-green-100 p-4 rounded-full shadow-lg hover:bg-green-700 transition"
+    >
+      <img src="./images/arrow-right.png" alt="icon" class="w-6 h-6" />
+    </button>
+  </body>
+</html>

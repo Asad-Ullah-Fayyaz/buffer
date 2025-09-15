@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Hover Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+
+ <div class="relative group w-48 h-32 bg-gray-200 p-4 rounded-lg">
+  <p>Hover me!</p>
+
+  <!-- Arrow only appears on hover -->
+  <div class="hidden group-hover:block absolute top-2 right-2 w-6 h-6 bg-[url('./images/back.png')] bg-contain bg-no-repeat">
+  </div>
+</div>
+
+</body>
+</html>
+
